@@ -10,3 +10,5 @@
 - Input scores were not modified.
 - Commit: a46c663 (amended locally after cleanup).
 - Push: https://github.com/LP-sun/muse-cue-note-auto/tree/feat/musescore-cue-dsh
+
+- Located DSH desktop Profile at C:/Users/Lenovo/.dsh/profiles/desktop; installed bundle copy at its node_modules/dsh-musescore-cue-planner and added profile patch/dependency. DSH executable itself is not exposed as a CLI command, so reload/tool-list evidence remains pending desktop restart.
