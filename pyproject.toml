@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-score-cue-planner"
+version = "0.3.0"
+description = "Read-only orchestral cue planning with MuseScore 4 XML and mcp-score live bridge"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+cue-planner = "cueplanner.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cueplanner*"]

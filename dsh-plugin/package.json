@@ -1,0 +1,12 @@
+{
+  "name": "dsh-musescore-cue-planner",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": { ".": "./index.js" },
+  "files": ["index.js", "runtime.js", "cueplanner", "cordis.patch.yml"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "peerDependencies": { "@deepseek-ai/dsh-tools": "*" },
+  "scripts": {"test": "node --test tests/*.test.mjs"}
+}

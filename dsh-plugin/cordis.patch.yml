@@ -1,0 +1,10 @@
+# Edit root/python/mcpExe to match your local installation; Codex should
+# verify the existing DSH profile first before activating this bundle.
+- insert:
+    - id: musescore-cue-planner
+      name: dsh-musescore-cue-planner
+      config:
+        root: 'C:/Users/Lenovo/Documents/MuseScore4/Scores'
+        python: 'python'
+        mcpExe: 'mcp-score'
+        mcpPort: 8765

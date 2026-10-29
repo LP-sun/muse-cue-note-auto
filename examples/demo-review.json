@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "engine": "mcp-score-cue-planner/0.2.0",
+  "source": "examples/demo-orchestra.mscz",
+  "source_sha256": "fd77d3d54395f3cc747c51dde6bb8cd71bfe13a1068f4bcad1db5d469a79c944",
+  "musescore_format_version": "4.20",
+  "title": "Cue Test Suite",
+  "measure_count": 12,
+  "part_count": 3,
+  "staff_count": 3,
+  "settings": {
+    "min_rest": 8,
+    "cue_bars": 2,
+    "top_sources": 4,
+    "allow_cross_transposition": true
+  },
+  "candidates": [
+    {
+      "id": "2@12",
+      "target": "Clarinet in B♭",
+      "target_staff": "2",
+      "target_staff_index": 1,
+      "rest_from": 1,
+      "rest_to": 11,
+      "rest_bars": 11,
+      "cue_from": 10,
+      "cue_to": 11,
+      "entry_measure": 12,
+      "sources": [
+        {
+          "id": "2@12<-3@10",
+          "source_staff": "3",
+          "source_staff_index": 2,
+          "source": "Flute",
+          "score": 47.0,
+          "features": {
+            "note_onsets": 8,
+            "notes_per_bar": 4.0,
+            "rhythmic_values": 1,
+            "contour_changes": 2,
+            "range_semitones": 6,
+            "transposition_difference": true
+          },
+          "risk_flags": [
+            "target_instrument_transposition"
+          ],
+          "preview_sounding_midi": [
+            60,
+            62,
+            64,
+            66,
+            60,
+            62,
+            64,
+            66
+          ]
+        },
+        {
+          "id": "2@12<-1@10",
+          "source_staff": "1",
+          "source_staff_index": 0,
+          "source": "Oboe",
+          "score": 45.5,
+          "features": {
+            "note_onsets": 8,
+            "notes_per_bar": 4.0,
+            "rhythmic_values": 1,
+            "contour_changes": 2,
+            "range_semitones": 3,
+            "transposition_difference": true
+          },
+          "risk_flags": [
+            "target_instrument_transposition"
+          ],
+          "preview_sounding_midi": [
+            60,
+            61,
+            62,
+            63,
+            60,
+            61,
+            62,
+            63
+          ]
+        }
+      ],
+      "recommended_source_id": "2@12<-3@10",
+      "review_required": true
+    }
+  ],
+  "stats": {
+    "entries_with_cues": 1,
+    "skipped": {}
+  },
+  "warnings": [
+    "Only straightforward monophonic first-voice source passages are eligible.",
+    "Cue rank estimates rhythmic/melodic distinctiveness, not actual audibility.",
+    "MCP Score Bridge supplies metadata and navigation, not full-measure note extraction.",
+    "No changes have been made to the score; every candidate requires human review."
+  ]
+}
