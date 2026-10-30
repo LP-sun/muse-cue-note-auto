@@ -18,3 +18,5 @@
 - REAL BRIDGE VERIFIED: port 8765 listening; bridge-check returned MuseScore/Cue Test Suite, 3 parts, 12 measures. live-verify metadata checks passed (identity_proven false by design). focus candidate 2@12 selected Clarinet staff 1 at measure 10 with no note changes.
 
 - Requested batch ZIP inspected: it contains 6 prior cue-plan/review pairs plus summary, not original scores; no source scores were added to Git. Fresh batch against Documents/MuseScore4/Scores analyzed 2 local MSCZ files, produced 2 plans, 0 candidates each, without modifying inputs. Python regression remains 16/16 passed.
+
+- Located original local scores and copied two matching source files into ignored reports/source-scores for read-only analysis: Naru (80 measures, 15 parts, 3 candidates, SHA256 4C453374A2EC9BFEAC88762C5FE7609D30B26CDE21196F06230397D5FBBEE5DC) and Natlan Medley (192 measures, 34 parts, 53 candidates, SHA256 C29454AD6CDC4C0BB8FB7B7E36BF3F70946B20CF0924ADD74843D60B445D262C). Generated JSON plans under reports/original-batch; originals unchanged and excluded from Git.
