@@ -16,3 +16,5 @@
 - Added isolated uv 0.13.6, Python 3.14.10, and upstream mcp-score-server 0.2.0 from tskovlund/mcp-score source. install-plugin succeeded at C:/Users/Lenovo/Documents/MuseScore4/Plugins/mcp-score-bridge. MuseScore demo-orchestra.mscx opened read-only. Bridge GUI still needs enabling/running.
 
 - REAL BRIDGE VERIFIED: port 8765 listening; bridge-check returned MuseScore/Cue Test Suite, 3 parts, 12 measures. live-verify metadata checks passed (identity_proven false by design). focus candidate 2@12 selected Clarinet staff 1 at measure 10 with no note changes.
+
+- Requested batch ZIP inspected: it contains 6 prior cue-plan/review pairs plus summary, not original scores; no source scores were added to Git. Fresh batch against Documents/MuseScore4/Scores analyzed 2 local MSCZ files, produced 2 plans, 0 candidates each, without modifying inputs. Python regression remains 16/16 passed.
